@@ -1,0 +1,26 @@
+name: sushilay
+description: Sushilay - Restaurante Japonés en Santa Cruz de la Sierra
+
+services:
+  web:
+    source:
+      type: git
+      repository: https://github.com/diogoqz/sushilay.git
+      branch: main
+    build:
+      type: dockerfile
+      dockerfile: Dockerfile
+    domains:
+      - sushilay.com
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    resources:
+      memory: 512Mi
+      cpu: 0.5
+    healthcheck:
+      path: /
+      port: 3000
+      interval: 30s
+      timeout: 10s
+      retries: 3
