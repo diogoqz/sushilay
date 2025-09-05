@@ -4,7 +4,8 @@ import heroImage from "@/assets/hero-sushi.jpg";
 
 export const SushilayHero = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/59162986325', '_blank');
+    const message = encodeURIComponent('¡Hola! Vi su página web y me interesa pedir sushi. ¿Podrían enviarme el menú y los precios?');
+    window.open(`https://wa.me/59162986325?text=${message}`, '_blank');
   };
 
   return (

@@ -95,7 +95,7 @@ export const SushilayChef = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/59162986325"
+                href="https://wa.me/59162986325?text=¡Hola! Vi el video de la chef Lay y me interesa probar el Hot Philadelphia y otros platos. ¿Podrían enviarme el menú completo?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"

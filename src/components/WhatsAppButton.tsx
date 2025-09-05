@@ -15,7 +15,8 @@ export const WhatsAppButton = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/59162986325', '_blank');
+    const message = encodeURIComponent('¡Hola! Me gustaría hacer un pedido de sushi. ¿Podrían ayudarme?');
+    window.open(`https://wa.me/59162986325?text=${message}`, '_blank');
   };
 
   return (
