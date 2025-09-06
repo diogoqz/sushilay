@@ -34,7 +34,7 @@ export const SushilayOrder = () => {
               className="border-primary text-primary hover:bg-primary/10"
             >
               <Menu className="mr-3 h-5 w-5" />
-              VER CARDÁPIO
+              VER MENÚ
             </Button>
             
             <Button
@@ -47,7 +47,7 @@ export const SushilayOrder = () => {
               className="border-primary text-primary hover:bg-primary/10"
             >
               <Calendar className="mr-3 h-5 w-5" />
-              RESERVAR RODÍZIO
+              RESERVAR CITA PARA RODIZIO
             </Button>
           </div>
         </div>

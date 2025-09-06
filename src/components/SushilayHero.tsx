@@ -48,7 +48,7 @@ export const SushilayHero = () => {
             className="border-primary text-primary hover:bg-primary/10 transform hover:scale-105 transition-all duration-300"
           >
             <Menu className="mr-3 h-6 w-6" />
-            VER CARDÁPIO
+            VER MENÚ
           </Button>
         </div>
         
