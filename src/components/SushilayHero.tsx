@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Menu } from "lucide-react";
 import heroImage from "@/assets/hero-sushi.jpg";
 
 export const SushilayHero = () => {
@@ -29,16 +29,28 @@ export const SushilayHero = () => {
           Auténtica experiencia japonesa en Santa Cruz de la Sierra
         </p>
         
-        {/* Main CTA */}
-        <Button
-          variant="whatsapp"
-          size="xl"
-          onClick={handleWhatsAppClick}
-          className="mb-12 shadow-glow transform hover:scale-105 transition-all duration-300"
-        >
-          <MessageCircle className="mr-3 h-6 w-6" />
-          PEDIR POR WHATSAPP
-        </Button>
+        {/* Main CTAs */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <Button
+            variant="whatsapp"
+            size="xl"
+            onClick={handleWhatsAppClick}
+            className="shadow-glow transform hover:scale-105 transition-all duration-300"
+          >
+            <MessageCircle className="mr-3 h-6 w-6" />
+            PEDIR POR WHATSAPP
+          </Button>
+          
+          <Button
+            variant="outline"
+            size="xl"
+            onClick={() => window.open('https://sushilay.ola.click/products', '_blank')}
+            className="border-primary text-primary hover:bg-primary/10 transform hover:scale-105 transition-all duration-300"
+          >
+            <Menu className="mr-3 h-6 w-6" />
+            VER CARDÁPIO
+          </Button>
+        </div>
         
         {/* Quick Info */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-secondary text-lg">

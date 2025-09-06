@@ -1,4 +1,4 @@
-import { MessageCircle, Calendar } from "lucide-react";
+import { MessageCircle, Calendar, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const SushilayOrder = () => {
@@ -25,6 +25,16 @@ export const SushilayOrder = () => {
             >
               <MessageCircle className="mr-3 h-5 w-5" />
               ORDENAR AHORA
+            </Button>
+            
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => window.open('https://sushilay.ola.click/products', '_blank')}
+              className="border-primary text-primary hover:bg-primary/10"
+            >
+              <Menu className="mr-3 h-5 w-5" />
+              VER CARDÁPIO
             </Button>
             
             <Button
